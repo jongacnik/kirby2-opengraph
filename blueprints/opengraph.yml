@@ -1,0 +1,15 @@
+type: group
+fields:
+  opengraphSettings:
+    label: Share Settings
+    type: headline
+    numbered: false
+    help: The following fields are optional. You may use them to control the specific image and text displayed when this page is shared on sites such as Facebook or Twitter.
+  opengraphImage:
+    label: Image
+    type: image
+    width: 1/3
+  opengraphDescription:
+    label: Description
+    type: text
+    width: 2/3
