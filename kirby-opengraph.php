@@ -57,6 +57,8 @@ class KirbyOpengraph {
         $ogimage = $thisimage->url();
       } else if ($thisimage = $page->featuredimage()->toFile()) {
         $ogimage = $thisimage->url();
+      } else if (c::get('opengraph.image') && $thisimage = c::get('opengraph.image')($page)) {
+        $ogimage = $thisimage->url();
       }
     }
 
